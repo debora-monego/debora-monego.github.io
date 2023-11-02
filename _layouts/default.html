@@ -65,6 +65,42 @@
         </table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 
+        <tr onmouseout="colcrosslinks_stop()" onmouseover="colcrosslinks_start()">
+        <td style="padding:20px;width:30%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id='npl_image'>
+              <img src='images/colcrosslinks_after.png' width="160"></div>
+            <img src='images/colcrosslinks_before.png' width="160">
+          </div>
+          <script type="text/javascript">
+            function colcrosslinks_start() {
+              document.getElementById('colcrosslinks_image').style.opacity = "1";
+            }
+
+            function colcrosslinks_stop() {
+              document.getElementById('colcrosslinks_image').style.opacity = "0";
+            }
+            colcrosslinks_stop()
+          </script>
+        </td>
+        <td style="padding:20px;width:70%;vertical-align:middle">
+          <a href="https://www.nature.com/articles/s41467-023-37726-z">
+            <span class="papertitle">Collagen breaks at weak sacrificial bonds taming its mechanoradicals</span>
+          </a>
+          <br>
+          Benedikt Rennekamp, Christoph Karfusehr, Markus Kurth, Aysecan Ünal, <strong>Debora Monego</strong>, Kai Riedmiller, Ganna Gryn’ova, David M Hudson, Frauke Gräter
+          <br>
+          <em>Natura Communications</em>, 2023
+          <br>
+          <!--<a href="https://yifanjiang19.github.io/alignerf">project page</a>-->
+          <a href="https://www.biorxiv.org/content/10.1101/2022.10.17.512491v2.abstract">bioRxiv</a>
+          <p></p>
+          <p>
+          We use simulations and experiments to identify that collagen's weakest bonds, particularly in trivalent crosslinks, act as sacrificial points, rupturing to maintain material integrity and stabilize potentially harmful mechanoradicals, suggesting a strategy against early macroscopic failure and aging in connective tissue.
+          </p>
+        </td>
+      </tr>
+          
         <tr onmouseout="npl_stop()" onmouseover="npl_start()">
         <td style="padding:20px;width:30%;vertical-align:middle">
           <div class="one">

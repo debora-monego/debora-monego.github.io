@@ -65,6 +65,43 @@
         </table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 
+        <tr onmouseout="ligandlength_stop()" onmouseover="ligandlength_start()">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id='ligandlength_image'>
+              <img src='images/ligandlength_after.png' width="160"></div>
+            <img src='images/ligandlength_before.png' width="160">
+          </div>
+          <script type="text/javascript">
+            function npsize_start() {
+              document.getElementById('ligandlength_image').style.opacity = "1";
+            }
+
+            function npsize_stop() {
+              document.getElementById('ligandlength_image').style.opacity = "0";
+            }
+            alignerf_stop()
+          </script>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://pubs.acs.org/doi/abs/10.1021/acs.langmuir.8b02883">
+            <span class="papertitle">Colloidal stability of apolar nanoparticles: role of ligand length</span>
+          </a>
+          <br>
+          <strong>Debora Monego</strong>, Thomas Kister, Nicholas Kirkwood, Paul Mulvaney, Asaph Widmer-Cooper, Tobias Kraus 
+          <br>
+          <em>Langmuir</em>, 2018
+          <br>
+          <!--<a href="https://yifanjiang19.github.io/alignerf">project page</a>-->
+          <a href="https://arxiv.org/abs/1902.07413">arXiv</a>
+          <p></p>
+          <p>
+          We reveal that varying ligand length impacts colloidal stability differently in core- and ligand-dominated regimes, offering a microscopic understanding of the forces affecting the stability of apolar nanoparticles and elucidating the limitations of classical colloid theory.
+          </p>
+        </td>
+      </tr>
+
+          
         <tr onmouseout="npsize_stop()" onmouseover="npsize_start()">
         <td style="padding:20px;width:25%;vertical-align:middle">
           <div class="one">

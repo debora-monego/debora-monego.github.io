@@ -262,6 +262,34 @@
         </table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 
+        <tr onmouseout="statify_stop()" onmouseover="statify_start()">
+        <td style="padding:20px;width:30%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id='statify_image'>
+              <img src='images/statify_after.png' width="160"></div>
+            <img src='images/statify_before.png' width="160">
+          </div>
+          <script type="text/javascript">
+            function statify_start() {
+              document.getElementById('statify_image').style.opacity = "1";
+            }
+
+            function statify_stop() {
+              document.getElementById('statify_image').style.opacity = "0";
+            }
+            statify_stop()
+          </script>
+        </td>
+        <td style="padding:20px;width:70%;vertical-align:middle">
+          <a href="https://statify.ctl.columbia.edu">
+            <span class="papertitle">Statify: a tool to teach fundamental statistics concepts using Spotify data</span>
+          </a>
+          </p>
+          In collaboration with fellow Frontiers of Science instructors and the <a href="https://ctl.columbia.edu">Center for Teaching and Learning</a> at Columbia University, I co-developed a tool and instructions materials to teach statistics. The groups is funded by Columbia’s <a href=https://soler.columbia.edu>SOLER Grant</a>.
+          </p>
+        </td>
+      </tr>
+
         <tr onmouseout="diversity_stop()" onmouseover="diversity_start()">
         <td style="padding:20px;width:30%;vertical-align:middle">
           <div class="one">
@@ -287,8 +315,7 @@
           In collaboration with fellow Frontiers of Science instructors at Columbia University, I co-lead a bi-weekly series of discussions with undergraduate students on inclusivity in STEM courses. The goal was to identify actionable steps for integrating anti-racist and inclusive pedagogical practices into the science classroom. The groups is funded by Columbia’s <a href=https://fas.columbia.edu/content/diversity-excellence-and-inclusion>Equity and Diversity Activities Grant</a>.
           </p>
         </td>
-      </tr>
-       
+      </tr>       
 
 </html>
 

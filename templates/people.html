@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block title %}COLMEC - People{% endblock %}
+
+{% block content %}
+<section class="people-section">
+    <h1>OUR TEAM</h1>
+    <div class="people-container">
+        <!-- Person Card 1 -->
+        <div class="person-card">
+            <img src="{{ url_for('static', filename='img/profile-picture.jpeg') }}" alt="Dr. Debora Monego"
+                class="person-photo">
+            <div class="person-info">
+                <h2>Dr. Debora Monego</h2>
+                <p class="person-role">Principal Investigator</p>
+                <div class="person-links">
+                    <a href="{{ url_for('static', filename='files/cv.pdf') }}" target="_blank">View CV</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Person Card 2 -->
+        <div class="person-card">
+            <img src="{{ url_for('static', filename='img/frauke-picture.webp') }}" alt="Prof. Frauke Gräter"
+                class="person-photo">
+            <div class="person-info">
+                <h2>Prof. Frauke Gräter</h2>
+                <p class="person-role">Supervisor</p>
+                <div class="person-links">
+                    <!-- Use "href" with a direct external URL without url_for() -->
+                    <a href="https://www.mpip-mainz.mpg.de/en/graeter" target="_blank">Group website</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional person cards as needed -->
+    </div>
+</section>
+
+<!-- Footer with new content -->
+<footer>
+    <p>projectcolmec.eu | MSCA-PF research project by Debora Monego | <a href="https://doi.org/10.3030/101151862"
+            target="_blank">doi.org/10.3030/101151862</a></p>
+</footer>
+
+{% endblock %}

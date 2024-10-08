@@ -1,0 +1,796 @@
+/* Define font faces for Lato */
+@font-face {
+    font-family: 'Lato';
+    src: url('/static/fonts/lato/Lato-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('/static/fonts/lato/Lato-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* General Styling */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    background-color: #f9f9f9;
+}
+
+/* General content container */
+.content-container {
+    width: 60%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Navbar adjustments */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    height: auto;
+    min-height: 60px;
+    padding: 10px 5%;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links a {
+    margin: 5px;
+    color: #999999;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #000000;
+    font-weight: 700;
+}
+
+/* Logo Styling */
+.logo-container {
+    display: flex;
+    align-items: center;
+    height: auto;
+    max-width: 500px;
+    width: 25%;
+}
+
+.logo-image {
+    height: auto;
+    max-height: 60px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* Hero Section */
+.hero-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/static/img/cover.png');
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 0;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.hero-content {
+    width: 60%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero-section h1 {
+    font-size: 3vw;
+    font-weight: bold;
+    margin: 0;
+}
+
+.hero-section p {
+    font-size: 2vw;
+    margin: 20px 0;
+}
+
+/* Sections */
+.section, .news-section, .contact-section, .research-section, .people-section, .resources-section {
+    width: 60%;
+    max-width: 1200px;
+    padding: 20px 0;
+    margin: 0 auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.section h2, .research-section h1, .news-section h1, .contact-section h1, .resources-intro h1, .people-section h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.news-section h2 {
+    text-align: left;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+/* News Section */
+.news-section {
+    text-align: left;
+}
+
+.news-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* News Card */
+.news-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 20px 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* News Image */
+.news-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+/* News Info */
+.news-info {
+    width: 100%;
+}
+
+/* News Title */
+.news-title {
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: #1e1e1e;
+}
+
+/* News Date */
+.news-date {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+/* News Description */
+.news-description {
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* News Link */
+.news-link {
+    font-size: 16px;
+    color: #1e1e1e;
+    text-decoration: underline;
+}
+
+.news-link:hover {
+    text-decoration: none;
+}
+
+/* Contact Section */
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.people-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Person Card */
+.person-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+.person-photo {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.person-info {
+    width: 100%;
+    text-align: center;
+}
+
+/* Research Card adjustments */
+.research-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid #ddd;
+    flex-direction: row;
+}
+
+.research-card.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Research Image */
+.research-image {
+    width: 40%;
+    max-width: 400px;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.research-info {
+    width: 60%;
+    padding: 15px;
+    text-align: left;
+}
+
+.underlined-heading {
+    font-size: 16px;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #1e1e1e;
+    display: inline-block;
+    font-weight: normal;
+}
+
+/* Full-Width Background Container */
+.resources-bg {
+    width: 100%;
+    background-image: url('/static/img/resources-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 10px 0;
+    position: relative;
+}
+
+/* Content Container (Constrained Width) */
+.resources-intro {
+    width: 65%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    color: #000000;
+}
+
+.resources-intro p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* Resources Section */
+.resources-section {
+    padding: 60px 0;
+    text-align: left;
+}
+
+.resources-section h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.resources-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Resource Card */
+.resource-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 20px 0;
+}
+
+/* Resource Image */
+.resource-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+/* Resource Media (for videos) */
+.resource-media {
+    width: 100%;
+    max-width: 400px;
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+    overflow: hidden;
+}
+
+.resource-media iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+/* Resource Info */
+.resource-info {
+    width: 100%;
+}
+
+/* Resource Title */
+.resource-title {
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: #1e1e1e;
+}
+
+/* Resource Type (e.g., Blog Post, Video) */
+.resource-type {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* Resource Description */
+.resource-description {
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Resource Link */
+.resource-link {
+    font-size: 16px;
+    color: #1e1e1e;
+    text-decoration: underline;
+}
+
+.resource-link:hover {
+    text-decoration: none;
+}
+
+/* Blog Header and Content */
+.blog-header, .blog-content {
+    width: 60%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.blog-header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.blog-date {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.blog-section {
+    margin-bottom: 50px;
+}
+
+.blog-section h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #1e1e1e;
+    border-bottom: 2px solid #1e1e1e;
+    display: inline-block;
+    font-weight: 700;
+}
+
+/* Paragraphs */
+.blog-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Blog Image */
+.blog-image {
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    margin: 30px 0;
+    object-fit: contain;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Blog Links */
+.blog-link {
+    font-size: 18px;
+    color: #007BFF;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.blog-link:hover {
+    text-decoration: none;
+    color: #0056b3;
+}
+
+/* Blog Footer */
+.blog-footer {
+    text-align: center;
+    padding: 30px 5%;
+    border-top: 2px solid #1e1e1e;
+    background-color: #f1f1f1;
+}
+
+.blog-footer p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.blog-home-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #1e1e1e;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.blog-home-link:hover {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Funding Section */
+.funding-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.funding-section h1 {
+    font-size: 22px;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+.funding-images {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Space between the images */
+}
+
+.funding-image {
+    max-width: 200px; /* Restrict the width */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: contain; /* Ensure the image is fully visible without cropping */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+footer a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .content-container, .hero-content, .resources-intro, .blog-header, .blog-content,
+    .section, .news-section, .contact-section, .research-section, .people-section, .resources-section {
+        width: 70%;
+    }
+}
+
+@media (max-width: 992px) {
+    .content-container, .hero-content, .resources-intro, .blog-header, .blog-content,
+    .section, .news-section, .contact-section, .research-section, .people-section, .resources-section {
+        width: 80%;
+    }
+    
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .logo-container {
+        margin-bottom: 10px;
+    }
+    
+    .nav-links {
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-container, .hero-content, .resources-intro, .blog-header, .blog-content,
+    .section, .news-section, .contact-section, .research-section, .people-section, .resources-section {
+        width: 90%;
+    }
+
+    .logo-container {
+        max-width: 200px;
+        width: 40%;
+    }
+
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .research-card, .research-card.reverse {
+        flex-direction: column;
+    }
+
+    .research-image, .research-info {
+        width: 100%;
+    }
+
+    .hero-section {
+        height: 60vh;
+    }
+
+    .hero-content {
+        width: 80%;
+    }
+
+    .hero-section h1 {
+        font-size: 32px;
+    }
+
+    .hero-section p {
+        font-size: 18px;
+    }
+
+    .blog-header h1 {
+        font-size: 28px;
+    }
+
+    .blog-section h2 {
+        font-size: 24px;
+    }
+
+    .blog-section p {
+        font-size: 16px;
+    }
+
+    .blog-image {
+        max-height: 300px;
+    }
+}
+
+/* Responsive Design (Continued) */
+@media (max-width: 576px) {
+    .content-container, .hero-content, .resources-intro, .blog-header, .blog-content,
+    .section, .news-section, .contact-section, .research-section, .people-section, .resources-section {
+        width: 95%;
+        padding: 0 10px;
+    }
+
+    .logo-container {
+        max-width: 150px;
+        width: 50%;
+    }
+
+    .hero-section {
+        height: 50vh;
+    }
+
+    .hero-content {
+        width: 90%;
+    }
+
+    .hero-section h1 {
+        font-size: 24px;
+    }
+
+    .hero-section p {
+        font-size: 16px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .section h2, .research-section h1, .news-section h1, .contact-section h1, .resources-intro h1, .people-section h1 {
+        font-size: 24px;
+    }
+
+    .news-title {
+        font-size: 20px;
+    }
+
+    .news-description {
+        font-size: 14px;
+    }
+
+    .resource-title {
+        font-size: 20px;
+    }
+
+    .resource-description {
+        font-size: 14px;
+    }
+
+    .person-card {
+        max-width: 100%;
+    }
+
+    .research-image, .person-photo {
+        max-width: 100%;
+    }
+
+    .footer-image {
+        max-height: 100px;
+    }
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 480px) {
+    .hero-section h1 {
+        font-size: 20px;
+    }
+
+    .hero-section p {
+        font-size: 14px;
+    }
+
+    .section h2, .research-section h1, .news-section h1, .contact-section h1, .resources-intro h1, .people-section h1 {
+        font-size: 22px;
+    }
+
+    .news-title, .resource-title {
+        font-size: 18px;
+    }
+
+    .news-description, .resource-description {
+        font-size: 13px;
+    }
+
+    .blog-header h1 {
+        font-size: 24px;
+    }
+
+    .blog-section h2 {
+        font-size: 20px;
+    }
+
+    .blog-section p {
+        font-size: 14px;
+    }
+}
+
+/* Ensure full-width for navbar and footer across all screen sizes */
+@media (max-width: 1200px) {
+    .navbar, footer {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+/* Adjust content width for very large screens */
+@media (min-width: 1921px) {
+    .content-container, .hero-content, .resources-intro, .blog-header, .blog-content,
+    .section, .news-section, .contact-section, .research-section, .people-section, .resources-section {
+        width: 50%;
+        max-width: 1500px;
+    }
+}
+
+/* Print styles */
+@media print {
+    .navbar, footer {
+        display: none;
+    }
+
+    .content-container, .hero-content, .resources-intro, .blog-header, .blog-content,
+    .section, .news-section, .contact-section, .research-section, .people-section, .resources-section {
+        width: 100%;
+        max-width: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+        color: #000;
+        background: #fff;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid;
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+        page-break-inside: avoid;
+    }
+
+    .blog-image, .news-image, .research-image, .person-photo {
+        max-height: none;
+    }
+}

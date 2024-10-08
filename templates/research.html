@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+
+{% block title %}COLMEC - Research{% endblock %}
+
+{% block content %}
+<section class="research-section">
+    <h1>RESEARCH</h1>
+    <div class="research-container">
+        <!-- Research Area 1 -->
+        <div class="research-card">
+            <img src="{{ url_for('static', filename='img/wp1.png') }}" alt="WP1" class="research-image">
+            <div class="research-info">
+                <h2>Coevolution and Mechanical Function in Collagen</h2>
+                <p>Collagen is one of the most abundant proteins in the extracellular matrix and is essential for tissue
+                    structure and function. Its unique triple-helical structure is key to the mechanical properties of
+                    different tissues, from the elasticity of skin to the strength of bones. In our research, we explore
+                    the evolutionary history of collagen, focusing on how natural selection has shaped its amino acid
+                    sequence to adapt to mechanical forces.</p>
+                <p>Using advanced bioinformatics tools like Direct Coupling Analysis, we identify <strong>coevolved
+                        residue pairs</strong> within collagen sequences. This approach allows us to examine collagen
+                    across a range of species and tissue types, uncovering patterns of evolution that have remained
+                    consistent or changed over time. We pay special attention to residues that interact between triple
+                    helices, those involved in crosslinking, and amino acids with potential redox activity. This
+                    analysis gives us a deeper understanding of how intra- and inter-chain interactions contribute to
+                    collagen’s unique mechanical properties.</p>
+                <p>Our goal is to develop a <strong>predictive model</strong> that links collagen’s <strong>evolutionary
+                        markers</strong> to its <strong>mechanical behavior</strong>. Such a model would not only
+                    enhance our understanding of collagen’s role in tissue mechanics but could also inform biomaterial
+                    design and advance our knowledge of collagen-related disorders.</p>
+            </div>
+        </div>
+
+        <!-- Research Area 2 -->
+        <div class="research-card reverse">
+            <img src="{{ url_for('static', filename='img/wp2.png') }}" alt="WP2" class="research-image">
+            <div class="research-info">
+                <h2>Metal Ions and DOPA in Collagen Crosslinking</h2>
+                <p>Collagen's covalent crosslinks have been a focus of research for years, but there's still much to
+                    learn about this complex protein. We're exploring a less-studied aspect: the potential role of
+                    <strong>metal-coordinated crosslinks</strong>. We're especially intrigued by crosslinks involving
+                    <strong>DOPA</strong> (3,4-dihydroxy-L-phenylalanine) residues.</p>
+                <p>Our interest in this area was sparked by the fascinating properties of mussel byssus threads. These
+                    tough, elastic fibers use DOPA-Fe³⁺ coordination crosslinks to achieve their remarkable strength. We
+                    hypothesize that similar mechanisms might exist in collagen, potentially contributing to its
+                    mechanical properties.</p>
+                <p>To investigate this hypothesis, we employ a combination of computational and experimental methods.
+                    Our approach includes simulations to model the formation and behavior of these crosslinks at the
+                    molecular level and measurements to detect and characterize these metal-coordinated structures in
+                    collagen samples.</p>
+                <p>Our research aims to elucidate how these metal-coordinated crosslinks might influence collagen's
+                    mechanical properties, particularly its ability to <strong>withstand stress</strong> and potentially
+                    <strong>self-heal</strong>. Understanding these mechanisms could provide new insights into
+                    collagen's structure-function relationships and inform the development of biomaterials with enhanced
+                    mechanical properties.</p>
+            </div>
+        </div>
+
+        <!-- Research Area 3 -->
+        <div class="research-card">
+            <img src="{{ url_for('static', filename='img/wp3.png') }}" alt="WP3" class="research-image">
+            <div class="research-info">
+                <h2>Force Propagation in Collagen</h2>
+                <p>Understanding how mechanical forces propagate through collagen's complex structure is crucial for
+                    predicting its behavior under stress. Our research focuses on developing and refining
+                    <strong>full-atom models of collagen</strong>, integrating insights from our studies on collagen
+                    evolution and crosslinking mechanisms.</p>
+                <p>With these computational models, we can explore how different parts of collagen's structure affect
+                    <strong>how force spreads through it</strong>. We're looking at things like where crosslinks are
+                    located, how the triple helix is shaped, and how hydrogen bonds are arranged.</p>
+                <p>A key challenge in collagen research is bridging the gap between molecular-level interactions and
+                    macroscale mechanical properties. Our work aims to address this by developing more accurate
+                    predictive models of collagen behavior under various mechanical conditions.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- New Funding Section -->
+<section class="funding-section">
+    <h1>FUNDING</h1>
+    <div class="funding-images">
+        <img src="{{ url_for('static', filename='img/eu-logo.jpg') }}" alt="EU Logo" class="funding-image">
+        <img src="{{ url_for('static', filename='img/marie_curie-logo.jpg') }}" alt="Marie Curie Logo"
+            class="funding-image">
+    </div>
+</section>
+
+<!-- Footer with new content -->
+<footer>
+    <p>projectcolmec.eu | MSCA-PF research project by Debora Monego | <a href="https://doi.org/10.3030/101151862"
+            target="_blank">doi.org/10.3030/101151862</a></p>
+</footer>
+
+{% endblock %}

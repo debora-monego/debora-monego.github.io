@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+
+{% block title %}COLMEC{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="hero-content">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>COLLAGEN MECHANOCHEMISTRY</h1>
+            <p>IN AGING AND DISEASE</p>
+        </div>
+    </div>
+</section>
+
+<!-- Sections (Example for Research Overview) -->
+<section class="section">
+    <h2>Welcome</h2>
+    <p><strong>COLMEC</strong> (Establishing design rules for creating collagen-like materials with specific
+        mechanical stability and
+        response) is an interdisciplinary initiative that uses <strong>collagen</strong> as a model to understand
+        <strong>protein
+            mechanochemistry</strong>. This project is funded by the European Union through a Marie Skłodowska-Curie
+        Actions (MSCA)
+        postdoctoral fellowship.
+    </p>
+
+    <p>Our research focuses on three core objectives:</p>
+
+    <ol>
+        <li><strong>Identifying coevolved residue pairs</strong> associated with collagen's mechanochemical function:
+            We're examining how collagen's amino acid sequence has evolved to optimize force distribution and
+            mechanochemical coupling.</li>
+
+        <li><strong>Revealing the role of metal ions in collagen crosslinking</strong> with DOPA residues: We're
+            investigating how metal-coordinated bonds, especially those involving iron, might enhance both stiffness and
+            extensibility in collagen.</li>
+
+        <li><strong>Molecular mapping of force propagation in collagen</strong>: We're studying how collagen's
+            sacrificial bonds and other intermolecular interactions define its unique mechanical behaviour.</li>
+    </ol>
+
+    <p>By integrating bioinformatics, computational biophysics, and materials science, COLMEC aims to advance our
+        understanding of protein mechanochemistry. Our ultimate goal is to create a framework for designing synthetic,
+        biocompatible collagen-like materials with specific mechanical and chemical functions.</p>
+
+    <p>This website serves as a platform to share our research progress, findings, and resources related to the COLMEC
+        project. Whether you're a researcher in the field, a student interested in biomaterials, or simply curious about
+        the
+        molecular basis of tissue mechanics, we invite you to explore our work and follow our progress.</p>
+</section>
+
+<!-- News Section -->
+<section class="news-section">
+    <h2>COLMEC News</h2>
+    <div class="news-content">
+        <div class="news-container">
+            <!-- News Items Here -->
+            <!-- <div class="news-item">
+                <div class="media">
+                    <iframe src="https://www.youtube.com/embed/video_id" title="YouTube video" frameborder="0"
+                        allowfullscreen></iframe>
+                </div>
+                <h3 class="news-title">Title of News 1</h3>
+                <p class="news-subtitle">Subtitle or summary of News 1</p>
+                <p class="news-date">Date</p>
+            </div> -->
+            <!-- Repeat news-item as needed -->
+        </div>
+        <div class="scroll-controls">
+            <button class="scroll-left">←</button>
+            <button class="scroll-right">→</button>
+        </div>
+    </div>
+</section>
+
+<!-- Footer with new content -->
+<footer>
+    <p>projectcolmec.eu | MSCA-PF research project by Debora Monego | <a href="https://doi.org/10.3030/101151862"
+            target="_blank">doi.org/10.3030/101151862</a></p>
+</footer>
+
+{% endblock %}
+
+
+
+<script>
+    document.querySelector('.scroll-left').addEventListener('click', function () {
+        document.querySelector('.news-container').scrollBy({ left: -320, behavior: 'smooth' });
+    });
+
+    document.querySelector('.scroll-right').addEventListener('click', function () {
+        document.querySelector('.news-container').scrollBy({ left: 320, behavior: 'smooth' });
+    });
+</script>

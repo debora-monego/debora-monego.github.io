@@ -161,7 +161,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    background-image: url('/static/img/cover-resized.webp');
+    background-image: url('/static/img/cover.png');
     background-size: cover;
     background-position: center;
     height: 80vh;

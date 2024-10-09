@@ -14,37 +14,42 @@
     <!-- Header / Navbar -->
     <header>
         <nav class="navbar">
-            <!-- Logo Container -->
             <div class="logo-container">
                 <a href="{{ url_for('home') }}">
                     <img src="{{ url_for('static', filename='img/colmec-logo2.png') }}" alt="Logo" class="logo-image">
                 </a>
             </div>
-            <!-- Navigation Links -->
-            <div class="nav-links">
-                <a href="{{ url_for('home') }}" class="{% if request.endpoint == 'home' %}active{% endif %}">WELCOME</a>
-                <a href="{{ url_for('research') }}"
-                    class="{% if request.endpoint == 'research' %}active{% endif %}">RESEARCH</a>
-                <a href="{{ url_for('resources') }}"
-                    class="{% if request.endpoint == 'resources' %}active{% endif %}">RESOURCES</a>
-                <a href="{{ url_for('people') }}"
-                    class="{% if request.endpoint == 'people' %}active{% endif %}">PEOPLE</a>
-                <a href="{{ url_for('news') }}" class="{% if request.endpoint == 'news' %}active{% endif %}">NEWS</a>
-                <a href="{{ url_for('contact') }}"
-                    class="{% if request.endpoint == 'contact' %}active{% endif %}">CONTACT</a>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="{{ url_for('home') }}" {% if request.endpoint=='home' %}class="active" {% endif
+                        %}>WELCOME</a></li>
+                <li><a href="{{ url_for('research') }}" {% if request.endpoint=='research' %}class="active" {% endif
+                        %}>RESEARCH</a></li>
 
+                <li><a href="{{ url_for('resources') }}" {% if request.endpoint=='resources' %}class="active" {% endif
+                        %}>RESOURCES</a></li>
+                <li><a href="{{ url_for('people') }}" {% if request.endpoint=='people' %}class="active" {% endif
+                        %}>PEOPLE</a></li>
+                <li><a href="{{ url_for('news') }}" {% if request.endpoint=='new' %}class="active" {% endif %}>NEWS</a>
+                </li>
+                <li><a href="{{ url_for('contact') }}" {% if request.endpoint=='contact' %}class="active" {% endif
+                        %}>CONTACT</a></li>
+            </ul>
         </nav>
     </header>
+
+    <!-- Main Content -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 
-
-<!-- Main Content -->
-<main>
-    {% block content %}{% endblock %}
-</main>
-
 </html>
-
-
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">

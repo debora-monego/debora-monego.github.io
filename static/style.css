@@ -816,6 +816,89 @@ footer a:hover {
         height: 60px; /* Fixed size for logo */
         width: auto;
     }
+
+    footer {
+        padding: 20px 10px; /* Increased padding for mobile */
+    }
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 375px) {
+    .hero-section {
+        background-image: url('/static/img/cover-mobile.png'); /* Different image for mobile */
+    }
+
+    .hero-content {
+        top: 80px;
+        left: 20px;
+        max-width: calc(100% - 40px);
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+        margin-bottom: 5px;
+    }
+
+    .hero-content p {
+        font-size: 24px;
+        line-height: 1.1;
+    }
+
+    .section h2, .research-section h1, .news-section h1, .contact-section h1, .resources-intro h1, .people-section h1 {
+        font-size: 22px;
+    }
+
+    .news-title, .resource-title {
+        font-size: 18px;
+    }
+
+    .news-description, .resource-description {
+        font-size: 13px;
+    }
+
+    .blog-header h1 {
+        font-size: 24px;
+    }
+
+    .blog-section h2 {
+        font-size: 20px;
+    }
+
+    .blog-section p {
+        font-size: 14px;
+    }
+
+    .navbar, .hero-section {
+        padding: 0 10px;
+    }
+
+    .hamburger {
+        right: 10px;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .nav-links.mobile.active {
+        display: flex;
+        flex-direction: column;
+        right: 0;
+    }
+
+    .logo-container {
+        flex-grow: 0; /* Prevent the logo from taking extra space */
+        max-width: 200px; /* Set a max-width for the logo */
+    }
+
+    .logo-image {
+        height: 60px; /* Fixed size for logo */
+        width: auto;
+    }
+
+    footer {
+        padding: 20px 10px; /* Increased padding for mobile */
+    }
 }
 
 /* Ensure full-width for body and main content area */

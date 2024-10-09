@@ -183,8 +183,8 @@ body {
 .hero-content h1 {
     font-size: 40px;
     font-weight: 900;
-    -webkit-text-stroke: 3px white;
-    text-shadow: 0 0 1px white, 0 0 1px white;
+    /* -webkit-text-stroke: 3px white;
+    text-shadow: 0 0 1px white, 0 0 1px white; */
   }
 
 /* Subtitle */
@@ -683,6 +683,10 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
+    .hero-section {
+        background-image: url('/static/img/cover-mobile.png'); /* Different image for mobile */
+    }
+
     .content-container, .resources-intro, .blog-header, .blog-content,
     .section, .news-section, .contact-section, .research-section, .people-section, .resources-section {
         width: 90%;
@@ -749,81 +753,16 @@ footer a:hover {
         top: 30px;
         z-index: 10;
     }
-}
 
-/* Responsive Design (Continued) */
-@media (max-width: 576px) {
-    .content-container, .resources-intro, .blog-header, .blog-content,
-    .section, .news-section, .contact-section, .research-section, .people-section, .resources-section {
-        width: 95%;
-    }
-
-    .logo-container {
-        flex-grow: 0; /* Prevent the logo from taking extra space */
-        max-width: 200px; /* Set a max-width for the logo */
-    }
-
-    .logo-image {
-        height: 60px; /* Fixed size for logo */
-        width: auto;
-    }
-
-    .nav-links {
-        display: none;
-    }
-
-    .navbar {
-        justify-content: space-between;
-    }
-
-    .hamburger {
-        right: 30px; /* Ensure hamburger stays right aligned */
-    }
-
-    .section h2, .research-section h1, .news-section h1, .contact-section h1, .resources-intro h1, .people-section h1 {
-        font-size: 24px;
-    }
-
-    .news-title {
-        font-size: 20px;
-    }
-
-    .news-description {
-        font-size: 14px;
-    }
-
-    .resource-title {
-        font-size: 20px;
-    }
-
-    .resource-description {
-        font-size: 14px;
-    }
-
-    .person-card {
-        max-width: 100%;
-    }
-
-    .research-image, .person-photo {
-        max-width: 100%;
-    }
-
-    .footer-image {
-        max-height: 100px;
-    }
-
-    .nav-links.mobile.active {
-        display: flex;
-        flex-direction: column;
-        right: 0;
+    footer {
+        padding: 20px 10px; /* Increased padding for mobile */
     }
 }
 
 /* Additional responsive adjustments */
-@media (max-width: 480px) {
-    .hero-section h1,
-    .hero-section p {
-        font-size: inherit; /* Keep same font size on smaller screens */
+@media (max-width: 414px) {
+    .hero-section {
+        background-image: url('/static/img/cover-mobile.png'); /* Different image for mobile */
     }
 
     .section h2, .research-section h1, .news-section h1, .contact-section h1, .resources-intro h1, .people-section h1 {

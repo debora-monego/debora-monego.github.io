@@ -13,7 +13,7 @@
             <div class="person-info">
                 <h2>Dr. Debora Monego</h2>
                 <p class="person-role">Principal Investigator</p>
-                <div class="person-links">
+                <div class="person-links" loading="lazy">
                     <a href="{{ url_for('static', filename='files/cv.pdf') }}" target="_blank">View CV</a>
                 </div>
             </div>
@@ -22,7 +22,7 @@
         <!-- Person Card 2 -->
         <div class="person-card">
             <img src="{{ url_for('static', filename='img/frauke-picture.webp') }}" alt="Prof. Frauke Gräter"
-                class="person-photo">
+                class="person-photo" loading="lazy">
             <div class="person-info">
                 <h2>Prof. Frauke Gräter</h2>
                 <p class="person-role">Supervisor</p>

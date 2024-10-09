@@ -161,15 +161,20 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    background-image: url('/static/img/cover.png');
-    background-size: cover;
-    background-position: center;
+    background-color: #e0e0e0; /* Placeholder color */
     height: 80vh;
     position: relative;
     color: #ffffff;
     text-align: left;
-    /* padding: 0 20px; */
 }
+
+/* Class to apply the background image lazily */
+.hero-bg-loaded {
+    background-image: url('/static/img/cover.png');
+    background-size: cover;
+    background-position: center;
+}
+
 
 /* Hero content container */
 .hero-content {

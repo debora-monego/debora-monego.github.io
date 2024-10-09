@@ -14,34 +14,33 @@
     <!-- Header / Navbar -->
     <header>
         <nav class="navbar">
-            <!-- Logo Container -->
             <div class="logo-container">
                 <a href="/">
                     <img src="/static/img/colmec-logo2.png" alt="Logo" class="logo-image">
                 </a>
             </div>
-            <!-- Navigation Links -->
-            <div class="nav-links">
-                <a href="/" class="">WELCOME</a>
-                <a href="/research.html"
-                    class="">RESEARCH</a>
-                <a href="/resources.html"
-                    class="">RESOURCES</a>
-                <a href="/people.html"
-                    class="active">PEOPLE</a>
-                <a href="/news.html" class="">NEWS</a>
-                <a href="/contact.html"
-                    class="">CONTACT</a>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="/" >WELCOME</a></li>
+                <li><a href="/research.html" >RESEARCH</a></li>
 
+                <li><a href="/resources.html" >RESOURCES</a></li>
+                <li><a href="/people.html" class="active" >PEOPLE</a></li>
+                <li><a href="/news.html" >NEWS</a>
+                </li>
+                <li><a href="/contact.html" >CONTACT</a></li>
+            </ul>
         </nav>
     </header>
-</body>
 
-
-<!-- Main Content -->
-<main>
-    
+    <!-- Main Content -->
+    <main>
+        
 <section class="people-section">
     <h1>OUR TEAM</h1>
     <div class="people-container">
@@ -83,9 +82,10 @@
 </footer>
 
 
-</main>
+    </main>
+
+    <!-- Scripts -->
+    <script src="/static/script.js"></script>
+</body>
 
 </html>
-
-
-<link rel="stylesheet" href="/static/style.css">

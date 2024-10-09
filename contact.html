@@ -14,34 +14,33 @@
     <!-- Header / Navbar -->
     <header>
         <nav class="navbar">
-            <!-- Logo Container -->
             <div class="logo-container">
                 <a href="/">
                     <img src="/static/img/colmec-logo2.png" alt="Logo" class="logo-image">
                 </a>
             </div>
-            <!-- Navigation Links -->
-            <div class="nav-links">
-                <a href="/" class="">WELCOME</a>
-                <a href="/research.html"
-                    class="">RESEARCH</a>
-                <a href="/resources.html"
-                    class="">RESOURCES</a>
-                <a href="/people.html"
-                    class="">PEOPLE</a>
-                <a href="/news.html" class="">NEWS</a>
-                <a href="/contact.html"
-                    class="active">CONTACT</a>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="/" >WELCOME</a></li>
+                <li><a href="/research.html" >RESEARCH</a></li>
 
+                <li><a href="/resources.html" >RESOURCES</a></li>
+                <li><a href="/people.html" >PEOPLE</a></li>
+                <li><a href="/news.html" >NEWS</a>
+                </li>
+                <li><a href="/contact.html" class="active" >CONTACT</a></li>
+            </ul>
         </nav>
     </header>
-</body>
 
-
-<!-- Main Content -->
-<main>
-    
+    <!-- Main Content -->
+    <main>
+        
 <section class="contact-section">
     <h1>CONTACT US!</h1>
 
@@ -63,8 +62,8 @@
         <!-- Social Media Links -->
         <div class="info-block">
             <h2>Follow Us</h2>
-            <a href="https://mastodon.social/YOUR_PROFILE" target="_blank" class="social-link">
-                <i class="fab fa-mastodon"></i> Mastodon
+            <a href="https://www.instagram.com/projectcolmec" target="_blank" class="social-link">
+                <i class="fab fa-instagram"></i> Instagram
             </a>
         </div>
 
@@ -87,9 +86,10 @@
 </footer>
 
 
-</main>
+    </main>
+
+    <!-- Scripts -->
+    <script src="/static/script.js"></script>
+</body>
 
 </html>
-
-
-<link rel="stylesheet" href="/static/style.css">

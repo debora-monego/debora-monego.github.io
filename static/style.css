@@ -56,7 +56,7 @@ body {
 .nav-links a {
     color: #999999; /* Initial grey color */
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-decoration: none;
     text-transform: uppercase;
     transition: color 0.3s ease; /* Smooth transition for color change */
@@ -164,7 +164,7 @@ body {
     background-image: url('/static/img/cover.png');
     background-size: cover;
     background-position: center;
-    height: 80vh;
+    height: 68vh;
     position: relative;
     color: #ffffff;
     text-align: left;
@@ -174,7 +174,7 @@ body {
 /* Hero content container */
 .hero-content {
     position: absolute;
-    top: 120px; /* Fixed distance from top */
+    top: 80px; /* Fixed distance from top */
     left: 60px; /* Fixed distance from left */
     max-width: calc(100% - 120px); /* Ensure content doesn't overflow */
 }
@@ -195,6 +195,22 @@ body {
     line-height: 0.5;
 }
 
+/* Logo Styling for larger screens */
+.hero-logo-container {
+    display: flex;
+    align-items: center;
+    height: 10%;
+    position: absolute;
+    bottom: 40px; /* Fixed distance from bottom */
+    right: 20px; /* Fixed distance from right */
+}
+
+.hero-logo {
+    width: 375px;
+    height: auto;
+    max-width: 100%;
+}
+
 /* Sections */
 .section, .news-section, .contact-section, .research-section, .people-section, .resources-section {
     width: 60%;
@@ -206,9 +222,26 @@ body {
 
 .section h2, .research-section h1, .news-section h1, .contact-section h1, .resources-intro h1, .people-section h1 {
     font-size: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 55px;
     font-weight: normal;
     text-align: center;
+}
+
+.section h3 {
+    text-align: center;
+    font-weight: lighter;
+    font-size: 16px;
+    line-height: 1;
+    margin-bottom: 3px;
+    margin-top: 6px;
+}
+
+.section h4 {
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+    font-weight: lighter;
+    margin-top: 0px;
 }
 
 .news-section h2 {
@@ -639,16 +672,16 @@ footer a:hover {
 
 
 /* Responsive Design */
-@media (max-width: 1200px) {
-    .content-container, .resources-intro, .blog-header, .blog-content,
-    .section, .news-section, .contact-section, .research-section, .people-section, .resources-section {
-        width: 70%;
+/* Large desktops */
+@media (max-width: 1440px) {
+    .content-container, .resources-intro, .section, .news-section, .research-section, .people-section {
+        width: 65%;
     }
 }
 
-@media (max-width: 1115px) {
-    .content-container, .resources-intro, .blog-header, .blog-content,
-    .section, .news-section, .contact-section, .research-section, .people-section, .resources-section {
+/* Tablets and smaller desktops */
+@media (max-width: 1024px) {
+    .content-container, .resources-intro, .section, .news-section, .research-section, .people-section {
         width: 75%;
     }
 
@@ -660,57 +693,47 @@ footer a:hover {
         display: none;
     }
 
+    .hamburger {
+        display: block;
+    }
+
+    .logo-container {
+        max-width: 200px;
+    }
+
+    .logo-image {
+        height: 60px;
+        width: auto;
+    }
+
+    /* Ensure the mobile dropdown menu is positioned properly */
     .nav-links.mobile.active {
         display: flex;
         flex-direction: column;
         right: 0;
     }
-
-    .hamburger {
-        display: block;
-    }
-   
-    .logo-container {
-        flex-grow: 0; /* Prevent the logo from taking extra space */
-        max-width: 200px; /* Set a max-width for the logo */
-    }
-
-    .logo-image {
-        height: 60px; /* Fixed size for logo */
-        width: auto;
-    }
-
 }
 
+/* Tablets in portrait mode or large phones */
 @media (max-width: 768px) {
-    .hero-section {
-        background-image: url('/static/img/cover-mobile.png'); /* Different image for mobile */
+    .content-container, .resources-intro, .section, .news-section, .research-section, .people-section {
+        width: 80%;
     }
 
-    .content-container, .resources-intro, .blog-header, .blog-content,
-    .section, .news-section, .contact-section, .research-section, .people-section, .resources-section {
-        width: 90%;
+    .hero-section {
+        background-image: url('/static/img/cover-mobile.png');
     }
 
     .navbar {
         justify-content: space-between;
     }
 
-    .nav-links {
-        display: none;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
     .logo-container {
-        flex-grow: 0; /* Prevent the logo from taking extra space */
-        max-width: 200px; /* Set a max-width for the logo */
+        max-width: 200px;
     }
 
     .logo-image {
-        height: 60px; /* Fixed size for logo */
+        height: 60px;
         width: auto;
     }
 
@@ -729,6 +752,7 @@ footer a:hover {
         width: 100%;
     }
 
+    /* Blog specific adjustments */
     .blog-header h1 {
         font-size: 28px;
     }
@@ -744,36 +768,34 @@ footer a:hover {
     .blog-image {
         max-height: 300px;
     }
-
-    /* Show the hamburger menu when window is small */
-    #menu-toggle {
-        display: inline-block;
-        position: absolute;
-        right: 50px; /* Position dropdown menu to the right */
-        top: 30px;
-        z-index: 10;
-    }
-
-    footer {
-        padding: 20px 10px; /* Increased padding for mobile */
-    }
 }
 
-/* Additional responsive adjustments */
-@media (max-width: 500px) {
-    .hero-section {
-        background-image: url('/static/img/cover-mobile.png'); /* Different image for mobile */
+/* Smartphones */
+@media (max-width: 520px) {
+    .content-container, .resources-intro, .section, .news-section, .research-section, .people-section {
+        width: 90%;
     }
 
-    .hero-content {
-        top: 80px;
-        left: 20px;
-        max-width: calc(100% - 40px);
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .logo-container {
+        max-width: 200px;
+    }
+
+    .logo-image {
+        height: 60px;
+        width: auto;
+    }
+
+    /* Hero Section Adjustments */
+    .hero-section {
+        background-image: url('/static/img/cover-mobile.png');
     }
 
     .hero-content h1 {
-        font-size: 36px;
-        margin-bottom: 5px;
+        font-size: 32px;
     }
 
     .hero-content p {
@@ -781,18 +803,7 @@ footer a:hover {
         line-height: 1.1;
     }
 
-    .section h2, .research-section h1, .news-section h1, .contact-section h1, .resources-intro h1, .people-section h1 {
-        font-size: 22px;
-    }
-
-    .news-title, .resource-title {
-        font-size: 18px;
-    }
-
-    .news-description, .resource-description {
-        font-size: 13px;
-    }
-
+    /* Blog specific adjustments */
     .blog-header h1 {
         font-size: 24px;
     }
@@ -805,123 +816,66 @@ footer a:hover {
         font-size: 14px;
     }
 
-    .navbar, .hero-section {
-        padding: 0 10px;
-    }
-
-    .hamburger {
-        right: 10px;
-    }
-
-    .nav-links{
-        display: none;
-    }
-
-    .nav-links.mobile.active {
-        display: flex;
-        flex-direction: column;
-        right: 0;
-    }
-
-    .logo-container {
-        flex-grow: 0; /* Prevent the logo from taking extra space */
-        max-width: 200px; /* Set a max-width for the logo */
-    }
-
-    .logo-image {
-        height: 60px; /* Fixed size for logo */
-        width: auto;
-    }
-
     footer {
-        padding: 20px 10px; /* Increased padding for mobile */
+        padding: 20px 10px;
+    }
+
+    /* Research section images */
+    .research-card, .research-card.reverse {
+        flex-direction: column;
+    }
+
+    .research-image, .research-info {
+        width: 100%;
     }
 }
 
-/* Additional responsive adjustments */
+/* Very small smartphones */
 @media (max-width: 375px) {
-    .hero-section {
-        background-image: url('/static/img/cover-mobile.png'); /* Different image for mobile */
+    .content-container, .resources-intro, .section, .news-section, .research-section, .people-section {
+        width: 95%;
     }
 
-    .hero-content {
-        top: 80px;
-        left: 20px;
-        max-width: calc(100% - 40px);
-    }
-
+    /* Hero Section Adjustments */
     .hero-content h1 {
-        font-size: 32px;
-        margin-bottom: 5px;
+        font-size: 28px;
     }
 
     .hero-content p {
         font-size: 24px;
-        line-height: 1.1;
     }
 
-    .section h2, .research-section h1, .news-section h1, .contact-section h1, .resources-intro h1, .people-section h1 {
-        font-size: 22px;
-    }
-
-    .news-title, .resource-title {
-        font-size: 18px;
-    }
-
-    .news-description, .resource-description {
-        font-size: 13px;
-    }
-
+    /* Adjustments for smaller blog content */
     .blog-header h1 {
         font-size: 24px;
     }
 
     .blog-section h2 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .blog-section p {
         font-size: 14px;
     }
 
-    .navbar, .hero-section {
-        padding: 0 10px;
+    .hero-logo-container {
+        left: 10px; /* Fixed distance from right */
     }
-
-    .hamburger {
-        right: 10px;
-    }
-
-    .nav-links{
-        display: none;
-    }
-
-    .nav-links.mobile.active {
-        display: flex;
-        flex-direction: column;
-        right: 0;
-    }
-
-    .logo-container {
-        flex-grow: 0; /* Prevent the logo from taking extra space */
-        max-width: 200px; /* Set a max-width for the logo */
-    }
-
-    .logo-image {
-        height: 60px; /* Fixed size for logo */
-        width: auto;
-    }
-
-    .funding-image {
-        max-width: 150px; /* Restrict the width */
-        height: auto; /* Maintain the aspect ratio */
-        object-fit: contain; /* Ensure the image is fully visible without cropping */
-    } 
 
     footer {
-        padding: 20px 10px; /* Increased padding for mobile */
+        padding: 20px 10px;
+    }
+
+    /* Adjustments for research section */
+    .research-card, .research-card.reverse {
+        flex-direction: column;
+    }
+
+    .research-image, .research-info {
+        width: 100%;
     }
 }
+
 
 /* Ensure full-width for body and main content area */
 body, main {
